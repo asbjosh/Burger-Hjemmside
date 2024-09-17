@@ -1,0 +1,111 @@
+body {
+    margin: 0;  
+    padding: 0;
+    background: #1D2125;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header start */
+.header {
+    display: flex;                  
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 5px;
+    background: #1D2125;
+    color: #9fadbc;
+    margin: 0;
+    border-bottom: 2px solid #3a5279;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 0 1%;
+}
+.header li {
+    font-size: 20px;
+    list-style-type: none;
+    display: inline;
+}
+.header li a{
+    transition: background-color 0.4s ease, color 0.4s ease;
+    padding: 5px;
+    border-radius: 15px;
+}
+.header li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.contentHeader{
+    color: #9fadbc;
+    text-align: center;
+    font-size: xx-large;
+
+}
+.content{
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 4px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+.leftContainer, .middleContainer, .rightContainer {
+    font-size: 14px;          
+    line-height: 20px;        
+    margin: 0;                
+    display: flex;
+    align-items: center; 
+    width: 30%;     
+}
+
+.middleContainer {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    border: none;
+}
+
+.middleContainer input{
+    height: 25px;
+    width: 500px;
+    border: none;
+    border-radius: 6px;
+}
+
+.rightContainer {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 10px;
+    text-decoration: none;
+}
+
+.rightContainer a {
+    text-decoration: none;
+    color: #9fadbc;
+    
+}
+.rightContainer li {
+    margin: 0px 5px;
+}
+.burgerlogo{
+    width: 60px; 
+    height: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .Home a, .Home input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    
+    .Home input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }
