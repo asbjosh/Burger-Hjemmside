@@ -52,9 +52,8 @@ body {
     border: none;
 }
 
-.middleContainer input{
+input{
     height: 25px;
-    width: 500px;
     border: none;
     border-radius: 6px;
 }
@@ -104,7 +103,7 @@ body {
 
 /* The Modal (background) */
 .modal {
-    /*display: none; /* Hidden by default */
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -118,11 +117,14 @@ body {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #1D2125;
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 30%; /* Could be more or less, depending on screen size */
+    color: #9fadbc;
+    border-radius: 6px;
+    border-color: #3a5279;
   }
   
   /* The Close Button */
@@ -139,7 +141,20 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
-.anmeldelsertext{
+
+  .stjerne{
+    font-size: xx-large !important;
+  }
+
+.rateText{
+margin: 5px;
+}
+
+.starRating{
+  color: white;
+}
+
+  .anmeldelsertext{
     display: flex;
     color: #9fadbc;
     padding: 10px;
@@ -188,3 +203,56 @@ body {
 .acontent img{
     height: 350px;
 }
+.one {
+    color: rgb(255, 0, 0);
+  }
+   
+  .two {
+    color: rgb(255, 106, 0);
+  }
+   
+  .three {
+    color: rgb(251, 255, 120);
+  }
+   
+  .four {
+    color: rgb(130, 248, 115);
+  }
+   
+  .five {
+    color: rgb(24, 159, 14);
+  }
+
+  .one, .cls-1 {
+    color: rgb(255, 0, 0);
+  }
+  .two, .cls-2 {
+    color: rgb(255, 106, 0);
+  }
+  .three, .cls-3 {
+    color: rgb(251, 255, 120);
+  }
+  .four, .cls-4 {
+    color: rgb(130, 248, 115);
+  }
+  .five, .cls-5 {
+    color: rgb(24, 159, 14);
+  }
+
+.titelInput{
+  width: 300px;
+}
+
+.textArea{
+  height: 250px;
+  width: 500px;
+  resize: none;
+  border: none;
+  border-radius: 6px;
+}
+
+.sendButton{
+  display: flex;
+  justify-content: end;
+
+  }

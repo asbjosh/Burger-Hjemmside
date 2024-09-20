@@ -155,19 +155,25 @@
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <h3>Bedøm din burger</h3>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span>
-          <span class="fa fa-star"></span>
+          <h3 class="rateText">Bedøm din burger</h3>
+          <div class="starRating">
+            <span onmouseover="highlightStars(1)" onmouseout="resetStars()" onclick="gfg(1)" class="fa fa-star stjerne"></span>
+            <span onmouseover="highlightStars(2)" onmouseout="resetStars()" onclick="gfg(2)" class="fa fa-star stjerne"></span>
+            <span onmouseover="highlightStars(3)" onmouseout="resetStars()" onclick="gfg(3)" class="fa fa-star stjerne"></span>
+            <span onmouseover="highlightStars(4)" onmouseout="resetStars()" onclick="gfg(4)" class="fa fa-star stjerne"></span>
+            <span onmouseover="highlightStars(5)" onmouseout="resetStars()" onclick="gfg(5)" class="fa fa-star stjerne"></span> 
+          </div>
+
           <h3>Titel på din anmeldelse</h3>
-          <input type="text">
+          <input type="text" class="titelInput" placeholder="Skriv en titel">
           <h3>Fortæl os om din burger</h3>
-          <textarea name="" id=""></textarea>
+          <textarea name="" class="textArea" placeholder="Fortæl os om burgeren"></textarea>
           <h3>Upload et billede</h3>
           <input type="file">
-          <input type="submit">
+          <div class="sendButton">
+            <input type="submit">
+          </div>
+          
         </div>
       
       </div>
