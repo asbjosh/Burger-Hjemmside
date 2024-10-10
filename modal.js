@@ -40,9 +40,9 @@ function highlightStars(n) {
     stars[i].classList.add(`cls-${i+1}`);
   }
 }
-
+                                                                                     
 // Reset stars to previous selected state on mouse out
-function resetStars() {
+function resetStars() {           
   remove();
   if (selectedStars > 0) {
     highlightStars(selectedStars);

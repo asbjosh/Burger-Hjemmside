@@ -1,26 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="/CSS/Login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Login Page</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="form-box login">
-            <h2>Login</h2>
+            <h1>Login</h1>
             <form id="loginForm">
                 <div class="input-box">
-                    <label for="loginUsername">Brugernavn:</label>
-                    <input type="text" id="loginUsername" name="username" required>
+                    <input type="text" placeholder="Brugernavn" id="loginUsername" name="username" required>
+                    <i class='bx bx-user' ></i>
                 </div>
                 <div class="input-box">
-                    <label for="loginPassword">Kodeord:</label>
-                    <input type="password" id="loginPassword" name="password" required>
+                    <input type="password" placeholder="Kodeord" id="loginPassword" name="password" required>
+                    <i class='bx bx-lock-alt' ></i>
                 </div>
-                <button type="submit" class="btn">login</button>'
+                <button type="submit" class="btn">Login</button>
                 <button type="button" class="home btn">Hjem</button>
                 <div class="login-register">
                     <p>Har du ikke en konto? 
@@ -36,7 +36,7 @@
         const username = document.getElementById('loginUsername').value;
         const password = document.getElementById('loginPassword').value;
 
-        const response = await fetch('/login', {
+        const response = await fetch('/Login', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json',
@@ -49,9 +49,8 @@
                 window.location.href = "http://localhost:3000/Index.html";
             }
             else{
-                alert('Brugeren eksister allerede');
+                alert('Din brugernavn eller kodeord er forkert');
             }
-        
     });
     </script>
     <script src = "/login.js" charset="utf-8"></script>

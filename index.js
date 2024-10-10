@@ -13,6 +13,7 @@ const Users_File = path.join(__dirname,'users.json');
 
 const ReadUsers = () => {
     const data = fs.readFileSync(Users_File, 'utf-8');
+    console.log("Users:",data);
     return JSON.parse(data);
 };
 
@@ -22,7 +23,6 @@ const WriteUser = (users) => {
 
 app.post('/Register', (req, res) => {
     const { username, password} = req.body;
-
     const users = ReadUsers();
 
     if(users.find(user => user.username === username)){
